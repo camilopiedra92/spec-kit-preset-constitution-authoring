@@ -6,6 +6,14 @@ All notable changes to this preset are documented here. The format follows
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-10-05
+
+### Added
+
+- Governance: each procedure names who carries it out and when. Blind-judged
+  A/B in the README: governance procedures with no actor or time went from 7
+  to 0 over four runs per arm.
+
 ## [1.0.0] - 2026-10-05
 
 ### Added
@@ -24,5 +32,6 @@ All notable changes to this preset are documented here. The format follows
   the core steps the fragment builds on still present. CI runs it pinned on
   push and against the latest release weekly.
 
-[Unreleased]: https://github.com/camilopiedra92/spec-kit-preset-constitution-authoring/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/camilopiedra92/spec-kit-preset-constitution-authoring/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/camilopiedra92/spec-kit-preset-constitution-authoring/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/camilopiedra92/spec-kit-preset-constitution-authoring/releases/tag/v1.0.0
