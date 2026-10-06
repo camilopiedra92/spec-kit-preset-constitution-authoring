@@ -41,6 +41,15 @@ into it, for a new project and an existing one alike.
 - Governance names only procedures this repository can carry out: no pull
   request rule where there is no remote, no approver who does not exist.
   Each procedure names who carries it out and when.
+- Neither governance nor a principle's check restates a procedure that
+  `/speckit-plan`, `/speckit-implement` or an installed preset already carries
+  out, such as the plan's Constitution Check gate, a preset's review or its
+  record of red runs: that is its home, and a second copy drifts from it.
+  Pointing to it by name is not restating; describing its steps or criteria
+  is. A change made outside those commands is checked by none of them, so
+  governance still names who checks it against the principles, and when.
+  Amending this file and its versioning stay in governance, as the core
+  template asks.
 
 ## Before the commit
 

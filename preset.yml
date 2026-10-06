@@ -7,7 +7,7 @@ schema_version: "1.0"
 preset:
   id: "constitution-authoring"
   name: "Constitution authoring"
-  version: "1.1.0"
+  version: "1.2.0"
   description: "Decides what /speckit-constitution puts in, for new and existing projects: sourced, every-change, checkable principles; the Sync Impact Report kept out of the commit"
   author: "camilopiedra92"
   repository: "https://github.com/camilopiedra92/spec-kit-preset-constitution-authoring"
