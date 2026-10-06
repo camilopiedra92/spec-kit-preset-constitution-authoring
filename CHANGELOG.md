@@ -6,6 +6,18 @@ All notable changes to this preset are documented here. The format follows
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-10-06
+
+### Added
+
+- Neither governance nor a principle's check restates a procedure that
+  `/speckit-plan`, `/speckit-implement` or an installed preset already runs;
+  naming it is not restating, and governance still names who checks a change
+  made outside them, and when; amending and versioning stay in governance.
+  On an existing project with both presets
+  installed, constitutions describing such a procedure went from 3 of 3 to
+  0 of 3, with the direct-change procedure kept in 3 of 3 (README, "Verified").
+
 ## [1.1.0] - 2026-10-05
 
 ### Added
@@ -32,6 +44,7 @@ All notable changes to this preset are documented here. The format follows
   the core steps the fragment builds on still present. CI runs it pinned on
   push and against the latest release weekly.
 
-[Unreleased]: https://github.com/camilopiedra92/spec-kit-preset-constitution-authoring/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/camilopiedra92/spec-kit-preset-constitution-authoring/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/camilopiedra92/spec-kit-preset-constitution-authoring/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/camilopiedra92/spec-kit-preset-constitution-authoring/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/camilopiedra92/spec-kit-preset-constitution-authoring/releases/tag/v1.0.0

@@ -23,7 +23,11 @@ project and an existing one alike:
   instructions are not a source.
 - Every MUST names its check: a command, a test, a search, or what a
   reviewer looks at. Governance names only procedures the repository can
-  carry out, each with who carries it out and when.
+  carry out, each with who carries it out and when. Neither governance nor a
+  check restates what `/speckit-plan`, `/speckit-implement` or an installed
+  preset already runs (naming it is fine); governance still says who checks a
+  change made outside them against the principles, and when, and keeps the
+  amendment and versioning policy.
 - The Sync Impact Report goes into the suggested commit message.
 
 ## When to use it
@@ -45,7 +49,7 @@ that is not tested.
 ## Install
 
 ```bash
-specify preset add --from https://github.com/camilopiedra92/spec-kit-preset-constitution-authoring/archive/refs/tags/v1.1.0.zip
+specify preset add --from https://github.com/camilopiedra92/spec-kit-preset-constitution-authoring/archive/refs/tags/v1.2.0.zip
 ```
 
 To move a project to a newer release:
@@ -130,3 +134,41 @@ most checks cannot be run when the constitution is written. On the expense
 splitter's real constitution (one repository, outside this eval) two rounds of
 review from a fresh context found the weak checks, so they are left to that
 review.
+
+v1.2.0, 2026-10-06: the rule that neither governance nor a principle's check
+restates a procedure `/speckit-plan`, `/speckit-implement` or an installed
+preset already runs, while governance still names who checks a change made
+outside them, and when. Found on a real constitution written with v1.1.0,
+whose Compliance clause restated the test-first preset's per-story review.
+
+Same headless setup as above (the author's global instructions loaded, and
+they describe that review), the *existing* prompt without the commit
+("Ratify the constitution from the rules this project already follows. Do
+not commit."), on a stdlib Python CLI with one feature and its tests, both
+presets installed by `sdd-init`; each candidate fragment installed with
+`specify preset add --dev` from a copy. The runs' allowlist did not include
+`resolve-template.sh`, so every run in every arm read the template layers by
+hand, a fallback the core command forbids. A constitution counts as
+restating when its governance or a principle's check describes the steps or
+criteria of such a procedure: what it runs, records or requires. Naming the
+procedure, as the rule allows, does not count, and neither does saying which
+document it judges against.
+
+| | v1.1.0 | v1.2.0 |
+|---|---|---|
+| Describes the steps or criteria of a command's or preset's procedure | 3 of 3 | 0 of 3 |
+| What was described | the plan gate's Complexity Tracking path (2), what the preset's per-story review runs (1), where the preset records red runs (1) | — |
+| Names who checks a change made outside the commands, and when | 3 of 3 | 3 of 3 |
+| States amendments and versioning | 3 of 3 | 3 of 3 |
+| Principles (lines) | 3, 3, 3 (61, 68, 77) | 3, 3, 4 (67, 68, 68) |
+
+Two earlier wordings were measured and dropped, three runs each. "Governance
+does not restate…; name only what nothing else runs" described no procedure,
+but one run read its last clause as "name nothing" and wrote no direct-change
+procedure, and another kept only the command half of it. The next wording
+also covered principle checks and kept the direct-change procedure in 3 of 3,
+but it said "a Spec Kit command", which takes in `/speckit-constitution`'s
+own amending and versioning, the procedure the core template asks governance
+to state; one of its runs stopped before writing rather than read the
+template by hand, and was repeated. One reader who knew the arms:
+directional, not a measurement of variance.
