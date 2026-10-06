@@ -23,7 +23,7 @@ project and an existing one alike:
   instructions are not a source.
 - Every MUST names its check: a command, a test, a search, or what a
   reviewer looks at. Governance names only procedures the repository can
-  carry out.
+  carry out, each with who carries it out and when.
 - The Sync Impact Report goes into the suggested commit message.
 
 ## When to use it
@@ -45,7 +45,7 @@ that is not tested.
 ## Install
 
 ```bash
-specify preset add --from https://github.com/camilopiedra92/spec-kit-preset-constitution-authoring/archive/refs/tags/v1.0.0.zip
+specify preset add --from https://github.com/camilopiedra92/spec-kit-preset-constitution-authoring/archive/refs/tags/v1.1.0.zip
 ```
 
 To move a project to a newer release:
@@ -89,7 +89,44 @@ project's three-principle constitution.
 
 Earlier drafts of the fragment gave the same shape in more runs: three for
 existing (50, 53 and 55 lines), three for new (nothing written each time),
-one for amend (only the asked principle added). Not observed: the interactive path, where
-the user picks candidates and the skill then ratifies them. With these
+one for amend (only the asked principle added). Not observed in these runs: the
+interactive path, where the user picks candidates and the skill then ratifies
+them (the v1.1.0 runs below take it with every candidate accepted). With these
 prompts both arms took the Sync Impact Report out of the committed file, so
 these runs are not evidence for that rule.
+
+v1.1.0, 2026-10-05, same setup, two steps resumed in one session:
+`/speckit-constitution <description>` on a new project with nothing written,
+then "Ratify all your candidate principles as written. The repository has no
+remote. Write the constitution, add the import to CLAUDE.md, and commit." Every
+candidate is accepted, so the user's choice among them is not exercised. Two
+projects (the YNAB converter above and an expense splitter), two runs each per
+arm. One judge scored the constitutions under labels that hid the arm, in two
+batches: arms A and B together, then arm C under the same written rules, computing what
+could be computed (float formatting, search patterns, set ordering). A check
+is *discriminating* if a realistic change that breaks its principle fails it,
+*weak* if such a change passes it or it checks something else, *reviewer* if
+it is left to a named reviewer step, *vague* if that step names nothing to
+look at.
+
+| | A: v1.0.0 | B: both candidate rules | C: v1.1.0, governance rule only |
+|---|---|---|---|
+| Checks named | 38 | 34 | 42 |
+| Discriminating | 12 (32%) | 14 (41%) | 15 (36%) |
+| Weak | 18 (47%) | 16 (47%) | 20 (48%) |
+| Reviewer / vague | 7 / 1 | 4 / 0 | 6 / 1 |
+| Governance procedures with no actor or no time | 7 | 1 | 0 |
+| "Catches X" claims refuted by computation | 0 | 3 | 0 |
+
+Four runs per arm and one judge: directional, not a measurement of variance.
+The governance rule is what shipped, measured on its own in arm C. The other
+candidate rule, "a check counts only if it fails on a change that breaks its
+principle; name the violation and run the check against it when it can run
+now", did not: weak checks stayed at the same share, the gain in
+discriminating checks was within what single runs vary by (per run: A
+25–38%, B 25–57%, C 29–56%), and it added confident
+claims about what a check catches that computation refuted. With no code yet,
+most checks cannot be run when the constitution is written. On the expense
+splitter's real constitution (one repository, outside this eval) two rounds of
+review from a fresh context found the weak checks, so they are left to that
+review.

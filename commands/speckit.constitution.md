@@ -40,6 +40,7 @@ into it, for a new project and an existing one alike.
   can, say what the reviewer looks at.
 - Governance names only procedures this repository can carry out: no pull
   request rule where there is no remote, no approver who does not exist.
+  Each procedure names who carries it out and when.
 
 ## Before the commit
 
