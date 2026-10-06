@@ -135,7 +135,11 @@ splitter's real constitution (one repository, outside this eval) two rounds of
 review from a fresh context found the weak checks, so they are left to that
 review.
 
-v1.2.0, 2026-10-06: the rule that neither governance nor a principle's check
+v1.2.0, 2026-10-06 (its v1.1.0 and v1.2.0 arms re-run with
+`tests/eval.sh <ref> <runs> <out-dir>`, which installs and commits the ref
+where the published v1.2.0 arm was an uncommitted `--dev` overlay; the two
+dropped wordings were never commits): the rule that neither governance nor a
+principle's check
 restates a procedure `/speckit-plan`, `/speckit-implement` or an installed
 preset already runs, while governance still names who checks a change made
 outside them, and when. Found on a real constitution written with v1.1.0,

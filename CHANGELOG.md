@@ -6,6 +6,12 @@ All notable changes to this preset are documented here. The format follows
 
 ## [Unreleased]
 
+### Added
+
+- `tests/eval.sh`: rebuilds the setup of the headless runs behind the v1.2.0
+  table, one arm per git ref, so its v1.1.0 and v1.2.0 arms can be repeated.
+  Not in CI.
+
 ## [1.2.0] - 2026-10-06
 
 ### Added
