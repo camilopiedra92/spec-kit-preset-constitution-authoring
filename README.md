@@ -49,7 +49,7 @@ that is not tested.
 ## Install
 
 ```bash
-specify preset add --from https://github.com/camilopiedra92/spec-kit-preset-constitution-authoring/archive/refs/tags/v1.2.0.zip
+specify preset add --from https://github.com/camilopiedra92/spec-kit-preset-constitution-authoring/archive/refs/tags/v1.2.1.zip
 ```
 
 To move a project to a newer release:
@@ -58,7 +58,8 @@ To move a project to a newer release:
 It touches only `speckit.constitution`, so it stacks with presets on other
 commands; every behaviour run below had
 [spec-kit-preset-test-first](https://github.com/camilopiedra92/spec-kit-preset-test-first)
-installed next to it.
+installed next to it (that preset was archived on 2026-10-08; this one does
+not depend on it).
 
 Once any preset is installed, Spec Kit's bash scripts resolve templates with
 `python3` and PyYAML. If the `python3` on your PATH lacks PyYAML, point
@@ -176,3 +177,8 @@ own amending and versioning, the procedure the core template asks governance
 to state; one of its runs stopped before writing rather than read the
 template by hand, and was repeated. One reader who knew the arms:
 directional, not a measurement of variance.
+
+v1.2.1, 2026-10-08: the same rule with its example of a preset's procedure
+narrowed to "a preset's review", dropping "or its record of red runs" once
+the test-first preset that kept that record was archived. The rule is
+unchanged; this wording was not re-run.
