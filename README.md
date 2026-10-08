@@ -177,3 +177,8 @@ own amending and versioning, the procedure the core template asks governance
 to state; one of its runs stopped before writing rather than read the
 template by hand, and was repeated. One reader who knew the arms:
 directional, not a measurement of variance.
+
+v1.2.1, 2026-10-08: the same rule with its example of a preset's procedure
+narrowed to "a preset's review", dropping "or its record of red runs" once
+the test-first preset that kept that record was archived. The rule is
+unchanged; this wording was not re-run.

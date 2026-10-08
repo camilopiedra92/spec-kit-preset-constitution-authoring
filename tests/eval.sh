@@ -31,7 +31,8 @@ ref=$1 runs=$2 out=$3
 # A leading zero is refused too: bash arithmetic reads 010 as octal.
 case $runs in '' | *[!0-9]* | 0*) usage ;; esac
 PRESET="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-# What sdd-init installs next to this preset.
+# What sdd-init installed next to this preset for the v1.1.0 and v1.2.0 runs.
+# That repository is archived; its tag archives still download (2026-10-08).
 TEST_FIRST_URL=https://github.com/camilopiedra92/spec-kit-preset-test-first/archive/refs/tags/v1.6.0.zip
 PROMPT='/speckit-constitution Ratify the constitution from the rules this project already follows. Do not commit.'
 ALLOWED='Read,Write,Edit,Glob,Grep,Bash(ls:*),Bash(cat:*),Bash(git log:*),Bash(git status:*),Bash(git diff:*),Bash(find:*)'
