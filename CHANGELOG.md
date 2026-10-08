@@ -6,11 +6,19 @@ All notable changes to this preset are documented here. The format follows
 
 ## [Unreleased]
 
+## [1.2.1] - 2026-10-08
+
 ### Added
 
 - `tests/eval.sh`: rebuilds the setup of the headless runs behind the v1.2.0
   table, one arm per git ref, so its v1.1.0 and v1.2.0 arms can be repeated.
   Not in CI.
+
+### Changed
+
+- The fragment's example of a procedure a preset already runs no longer
+  names a record of red runs: the test-first preset that kept one was
+  archived on 2026-10-08. The rule itself is unchanged.
 
 ## [1.2.0] - 2026-10-06
 
@@ -50,7 +58,8 @@ All notable changes to this preset are documented here. The format follows
   the core steps the fragment builds on still present. CI runs it pinned on
   push and against the latest release weekly.
 
-[Unreleased]: https://github.com/camilopiedra92/spec-kit-preset-constitution-authoring/compare/v1.2.0...HEAD
+[Unreleased]: https://github.com/camilopiedra92/spec-kit-preset-constitution-authoring/compare/v1.2.1...HEAD
+[1.2.1]: https://github.com/camilopiedra92/spec-kit-preset-constitution-authoring/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/camilopiedra92/spec-kit-preset-constitution-authoring/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/camilopiedra92/spec-kit-preset-constitution-authoring/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/camilopiedra92/spec-kit-preset-constitution-authoring/releases/tag/v1.0.0
